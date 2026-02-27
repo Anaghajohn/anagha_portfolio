@@ -344,6 +344,7 @@
         .hero-buttons {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap; /* Helps buttons stack nicely on smaller screens */
         }
 
         .btn {
@@ -1393,6 +1394,8 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <!-- Added Resume link in navbar -->
+                <li><a href="assets/anagha_john_Reume.pdf" download="Anagha_John_Resume.pdf" class="hover-target" style="color: var(--primary);">Resume</a></li>
             </ul>
             <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
         </div>
@@ -1408,8 +1411,14 @@
                     <span class="typewriter-text" id="typewriter"></span>
                 </div>
                 <p class="hero-desc">B.Tech Electronics & Communication Engineering student at Lovely Professional University. Passionate about IoT, Drone Technology, Automation, and building smart hardware solutions for real-world problems.</p>
+                
+                <!-- Added Download Resume Button -->
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary hover-target">View Work</a>
+                    <a href="assets/anagacv.pdf" download="Anagha_John_Resume.pdf" class="btn btn-primary hover-target">
+                        <svg style="width:1.2rem; height:1.2rem; vertical-align: middle; margin-right: 5px; margin-bottom: 2px; fill:currentColor" viewBox="0 0 24 24"><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/></svg>
+                        Resume
+                    </a>
+                    <a href="#projects" class="btn btn-secondary hover-target">View Work</a>
                     <a href="#contact" class="btn btn-secondary hover-target">Contact Me</a>
                 </div>
             </div>
@@ -1609,7 +1618,7 @@
                 <div class="timeline-content hover-target">
                     <span class="timeline-date">Aug 2024</span>
                     <h3 class="timeline-title">Internship Program Participant</h3>
-                    <h4 class="timeline-subtitle">ISRO Agnirna Space</h4>
+                    <h4 class="timeline-subtitle">Agnirna</h4>
                     <div class="timeline-text">
                         <p>Completed an intensive 8-week (80-hour) internship program by Agnirna.</p>
                         <ul>
